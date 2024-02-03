@@ -6,6 +6,27 @@
             origin : keyword linked to git repository
             mastre : master is the branch that we wish to push to
 
+# from local directory (not on github)
+5. git init --> to initializea git repo
+
+    error:
+        fatal: 'origin' does not appear to be a git repository
+        fatal: Could not read from remote repository.
+
+        Please make sure you have the correct access rights
+        and the repository exists.
+
+        ## WHEN PUSHING A LOCAL REPO TO GITHUB-->  Since it is not cloned from github git doesn't know which branch to push it to, so we have to create that connection. To do it
+        
+        1. Create a empty repo on github ( empty repo just to test, we can use an exixting repo as remote to push the code )
+6. -->     git remote add origin <remote repo link>
+7. -->     git remote -v --> to check the remote connection
+
+8. git push -u origin master --. push to remote repo (-u is for upstream, which can later be removed which will directly push to master then)
+
+
+
+
 ## steps to generate ssh key
 ssh-keygen -t rsa -b 4096 -C "email@addresss"
 
