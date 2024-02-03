@@ -19,7 +19,7 @@
         ## WHEN PUSHING A LOCAL REPO TO GITHUB-->  Since it is not cloned from github git doesn't know which branch to push it to, so we have to create that connection. To do it
         
         1. Create a empty repo on github ( empty repo just to test, we can use an exixting repo as remote to push the code )
-6. -->     git remote add origin <remote repo link>
+6. -->     git remote add origin <remote repository link >
 7. -->     git remote -v --> to check the remote connection
 
 8. git push -u origin master --. push to remote repo (-u is for upstream, which can later be removed which will directly push to master then)
